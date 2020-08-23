@@ -7,7 +7,7 @@ import (
 )
 
 func getenv(key string) string {
-	v := getenv(key)
+	v := os.Getenv(key)
 	if v == "" {
 		panic("You must set env " + key)
 	}
